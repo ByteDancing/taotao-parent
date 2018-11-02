@@ -10,3 +10,14 @@
 #第一天
 >   项目基本基本构建
     
+    
+    
+    
+#   第二天
+ -  框架整合Spring+SpringMVC+Mybatis
+ -  sql脚本创建数据库
+ -  使用mybatis的逆向工程生成代码
+ -  商品列表功能实现
+ 
+ ###    Spring+SpringMVC+Mybatis框架整合
+ #####  
