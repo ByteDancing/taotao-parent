@@ -32,3 +32,6 @@
     applicationContext-service.xml
     applicationContext-trans.xml
     springmvc.xml
+    
+    
+ #####2.基本功能

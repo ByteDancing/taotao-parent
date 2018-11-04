@@ -14,6 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 
 //@RestController
+
+/**
+ * taotao控制层的测试类
+ */
 @Controller
 public class TaoTaoController {
 
