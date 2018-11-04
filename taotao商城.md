@@ -9,8 +9,16 @@
 
 #第一天
 >   项目基本基本构建
-    
-    
+
+项目基础框架
+
+    taotao-parent
+        taotao-common   工具类
+        taotao-manager  
+            taotao-manager-pojo 实体类
+            taotao-managet-mapper   实体映射
+            taotao-manager-service  业务逻辑层
+            taotao-manager-web      业务表现层（war）
     
     
 #   第二天
@@ -19,5 +27,8 @@
  -  使用mybatis的逆向工程生成代码
  -  商品列表功能实现
  
- ###    Spring+SpringMVC+Mybatis框架整合
- #####  
+ #####1. Spring+SpringMVC+Mybatis框架整合
+    applicationContext-dao.xml
+    applicationContext-service.xml
+    applicationContext-trans.xml
+    springmvc.xml
