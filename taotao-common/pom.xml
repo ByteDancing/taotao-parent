@@ -13,5 +13,11 @@
 
     <description>通用组件，工具类</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
