@@ -23,7 +23,7 @@ public class JsonUtils {
      * @param object
      * @return
      */
-    private static String objectToJson(Object object){
+    public static String objectToJson(Object object){
         try {
             String str = MAPPER.writeValueAsString(object);
             return str;
@@ -40,7 +40,7 @@ public class JsonUtils {
      * @param <T>
      * @return
      */
-    private static <T> T jsonToPojo(String jsonData ,Class<T> beanType){
+    public static <T> T jsonToPojo(String jsonData ,Class<T> beanType){
 
         try {
             T t = MAPPER.readValue(jsonData,beanType);

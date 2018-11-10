@@ -7,7 +7,7 @@
 *   Spring+SpringMVC+Mybatis
 
 
-#第一天
+###第一天
 >   项目基本基本构建
 
 项目基础框架
@@ -21,7 +21,7 @@
             taotao-manager-web      业务表现层（war）
     
     
-#   第二天
+###   第二天
  -  框架整合Spring+SpringMVC+Mybatis
  -  sql脚本创建数据库
  -  使用mybatis的逆向工程生成代码
@@ -31,7 +31,17 @@
     applicationContext-dao.xml
     applicationContext-service.xml
     applicationContext-trans.xml
-    springmvc.xml
-    
-    
- #####2.基本功能
+    springmvc.xml 
+
+
+
+### 三、后台商品添加
+```
+商品分类选择；
+商品图片上传
+    安装nginx，在线安装vsftp，配置ftp服务
+使用富文本编辑器
+实现商品的添加
+以及修改/删除；
+```
+>  

@@ -3,8 +3,7 @@ package com.taotao.common.pojo;
 import java.util.List;
 
 /**
- * 数据结构
- *
+ * 匹配easyUI的数据接收
  * @Description
  * @Author ChengXiang
  * @Date 2018/11/8 23:49

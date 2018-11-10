@@ -1,5 +1,8 @@
 package com.taotao.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.taotao.common.pojo.DataGridResult;
 import com.taotao.mapper.TbItemMapper;
 import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbItemExample;
@@ -32,4 +35,24 @@ public class ItemServiceImpl implements ItemService{
         }
         return null;
     }
+
+    /**
+     * 商品列表查询
+     * @param page
+     * @param rows
+     * @return
+     */
+    @Override
+    public DataGridResult getItemList(int page, int rows) {
+        TbItemExample example = new TbItemExample();
+        PageHelper.startPage(page,rows);
+        List<TbItem> list = tbItemMapper.selectByExample(example);
+        DataGridResult result = new DataGridResult();
+        result.setRows(list);
+        PageInfo<TbItem> pageInfo = new PageInfo<>(list);
+        result.setTotal(pageInfo.getTotal());
+        return result;
+    }
+
+
 }

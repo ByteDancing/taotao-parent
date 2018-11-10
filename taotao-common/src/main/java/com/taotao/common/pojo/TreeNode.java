@@ -34,4 +34,13 @@ public class TreeNode {
     public void setState(String state) {
         this.state = state;
     }
+
+    public TreeNode() {
+    }
+
+    public TreeNode(long id, String text, String state) {
+        this.id = id;
+        this.text = text;
+        this.state = state;
+    }
 }

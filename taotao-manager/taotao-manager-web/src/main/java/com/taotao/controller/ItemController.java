@@ -1,5 +1,6 @@
 package com.taotao.controller;
 
+import com.taotao.common.pojo.DataGridResult;
 import com.taotao.pojo.TbItem;
 import com.taotao.service.ItemService;
 import org.slf4j.Logger;
@@ -29,6 +30,14 @@ public class ItemController {
         LOGGER.info("查询itemId{}"+itemId);
         TbItem tbItem = itemService.getItemById(itemId);
         return tbItem;
+    }
+
+
+    @RequestMapping("/item/list")
+    @ResponseBody
+    public DataGridResult getItemList(Integer page,Integer rows){
+        DataGridResult result = itemService.getItemList(page,rows);
+        return result;
     }
 
 /*
