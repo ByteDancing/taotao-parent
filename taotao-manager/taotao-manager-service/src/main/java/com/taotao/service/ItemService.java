@@ -1,6 +1,7 @@
 package com.taotao.service;
 
 import com.taotao.common.pojo.DataGridResult;
+import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.mapper.TbItemMapper;
 import com.taotao.pojo.TbItem;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,4 +18,5 @@ import java.security.PrivateKey;
 public interface ItemService {
     TbItem getItemById(Long itemId);
     DataGridResult getItemList(int page,int rows);
+    TaotaoResult insertItem(TbItem item,String desc) throws Exception;
 }
