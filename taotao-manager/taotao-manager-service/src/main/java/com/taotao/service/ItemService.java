@@ -18,5 +18,5 @@ import java.security.PrivateKey;
 public interface ItemService {
     TbItem getItemById(Long itemId);
     DataGridResult getItemList(int page,int rows);
-    TaotaoResult insertItem(TbItem item,String desc) throws Exception;
+    TaotaoResult insertItem(TbItem item,String desc,String itemParam) throws Exception;
 }
